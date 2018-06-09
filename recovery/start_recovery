@@ -1,0 +1,19 @@
+#! /bin/sh
+
+set -e
+
+case "$1" in
+  start)
+    echo "Starting Recovery "
+    /usr/bin/recovery
+    echo "done"
+    ;;
+  stop)
+    echo "No need to stop recovery "
+    ;;
+
+*)
+    exit 1
+;;
+esac
+exit 0
